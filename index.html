@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div style="background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; max-width: 400px;">
+    <h2 style="margin-top: 0; margin-bottom: 20px;">Register</h2>
+    <form onsubmit="return redirectToAnotherPage()">
+      <div style="margin-bottom: 20px;">
+        <label for="username" style="display: block; margin-bottom: 8px;">Username:</label>
+        <input type="text" id="username" name="username" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" required>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label for="email" style="display: block; margin-bottom: 8px;">Email:</label>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" required>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label for="password" style="display: block; margin-bottom: 8px;">Password:</label>
+        <input type="password" id="password" name="password" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" required>
+      </div>
+      <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToAnotherPage() {
+      // You can add your form validation logic here
+      
+      // Redirect to another page
+      window.location.href = "file:///D:/programing%20by%20rishabh/About%20Us.html";
+      return false; // Prevent form submission
+    }
+  </script>
+</body>
+</html>
